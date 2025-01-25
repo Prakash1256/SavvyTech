@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section className="bg-black text-white py-16 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <div className="max-w-7xl pt-25 mx-auto flex flex-col  md:flex-row items-center justify-between gap-8">
         
         {/* Text Section */}
         <div className="md:w-1/2 text-center md:text-left">
