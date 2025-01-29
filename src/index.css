@@ -1,2 +1,22 @@
 @import "tailwindcss";  
 
+/* Tailwind CSS classes */
+ html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   } 
+
+  /* For Tablets (screens between 600px and 1024px) */
+/* @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+} */
+
+/* For Mobile Devices (screens up to 599px) */
+/* @media (max-width: 599px) {
+  
+  html, body {
+    overflow-x: hidden;
+  }
+} */

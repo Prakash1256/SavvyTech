@@ -1,24 +1,30 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import AboutUs from './components/AboutUs';
-
-// import DeliveryModels from './components/DileveryModel';
-import CoreValues from './components/coreValues';
+import CoreValues from './components/CoreValues';
+import AboutSection from './components/AboutSection';
+import Service1 from './components/Service1';
 import WhyChooseUs from './components/WhyChooseUs';
+import Models from './components/Models';
+
+
+
+
 
 function App() {
   
 
   return (
     <>
-     <Navbar/>
-     <HeroSection/>
-     <AboutUs/>
-     <CoreValues/>
-     {/* <DeliveryModels/> */}
-     <WhyChooseUs/>
+   <Navbar/>
+   <HeroSection/>
+   <AboutSection/>
+   <CoreValues/>    
+   <Service1/>
+   <WhyChooseUs/>
+   <Models/>
+
     </>
   )
 }

@@ -8,14 +8,14 @@ const WhyChooseUs = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center h-screen p-6 lg:p-12 gap-8 bg-black">
+    <div className="flex flex-col lg:flex-row items-center justify-center h-screen p-6 lg:p-42 gap-9 bg-black">
       {/* Image Section */}
       <div
         className="w-full lg:w-1/2 flex justify-center"
         data-aos="fade-right" // Add fade-right effect for the image
       >
         <img
-          src="https://img.freepik.com/free-photo/black-laptop-screen-dark-room-night_169016-58009.jpg?t=st=1737827812~exp=1737831412~hmac=142eda537cd965439f594b10ae88eb38744f717fdb9af863bf645696f7a8889d&w=996"
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Person working on laptop"
           className="rounded-xl shadow-lg max-w-full"
         />
@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
         <h2 className="text-2xl text-[#feead8] lg:text-4xl font-bold mb-6">
           Why Choose Us?
         </h2>
-        <ul className="space-y-4 text-gray-700">
+        <ul className="space-y-4 text-gray-700 w-full">
           <li className="text-[#feead8]">
             <span className="font-bold text-[#feead8]">Innovative Solutions:</span> We stay at the forefront of technology, delivering solutions that leverage the latest advancements in AI, cloud, and data.
           </li>
