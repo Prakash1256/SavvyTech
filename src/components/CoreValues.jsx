@@ -1,122 +1,48 @@
-import React, { useEffect } from "react";
-import {
-  FaUsers,
-  FaRocket,
-  FaPeopleCarry,
-  FaHandshake,
-  FaTools,
-  FaAtom,
-} from "react-icons/fa";
+import { FaHandshake, FaCheckCircle, FaVideo, FaHeart, FaBinoculars, FaTrophy } from "react-icons/fa";
+import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const CoreValues = () => {
+const coreValues = [
+  { icon: <FaHandshake className="text-black text-4xl" />, title: "Leadership", color: "bg-[#feead8]", description:"We lead with intergrity , innovation , and vision , empowering buisness to stay ahead in the digital world ." },
+  { icon: <FaCheckCircle className="text-black text-4xl" />, title: "Agility", color: "bg-[#feead8]",description:"We adapt quickly to change providing flexible , agile and scalable solutions taiolred to meet evovling buisness need" },
+  { icon: <FaVideo className="text-black text-4xl" />, title: "Brilliance", color: "bg-[#feead8]",description:"We lead with intergrity , innovation , and vision empowering business to stay ahead in the digital world " },
+  { icon: <FaHeart className="text-black text-4xl" />, title: "Respect", color: "bg-[#feead8]",description:"We foster a culture of respect diversity and inclusion valuing every team memebers contribution" },
+  { icon: <FaBinoculars className="text-black text-4xl" />, title: "Yielding innovation", color: "bg-[#feead8]",description:"We continuosly innovate , ensuring that our solutions lead to growth and sustained success for our clients " },
+  { icon: <FaTrophy className="text-black text-4xl" />, title: "Synergy", color: "bg-[#feead8]" ,description:"We beieve in the power of collaboration working closely with clients and partners to the cultivate strong and life-long"}
+];
+
+export default function CoreValues() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
-  const values = [
-    {
-      title: "Leadership",
-      icon: <FaUsers />,
-      description:
-        "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Agility",
-      icon: <FaRocket />,
-      description:
-        "We adapt quickly to change, providing flexible, agile, and scalable solutions tailored to meet evolving business needs.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Brilliance",
-      icon: <FaAtom />,
-      description:
-        "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Respect",
-      icon: <FaHandshake />,
-      description:
-        "We foster a culture of respect, diversity, and inclusion, valuing every team member's contribution.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Yielding Innovation",
-      icon: <FaTools />,
-      description:
-        "We continuously innovate, ensuring that our solutions lead to growth and sustained success for our clients.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Synergy",
-      icon: <FaPeopleCarry />,
-      description:
-        "We believe in the power of collaboration, working closely with clients and partners to cultivate strong and life-long relationships.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-  ];
-
   return (
-    <div className="bg-black  min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
-      <h2
-        className="text-5xl font-bold mb-30  text-center text-[#feead8]"
-        data-aos="fade-left"
-      >
-        Our Core Values
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
-        {values.map((value, index) => {
-          const animationType = [
-            "fade-up",
-            "fade-left",
-            "fade-down",
-            "fade-right",
-          ][index % 4];
-
-          return (
+    <section className="bg-black"  >
+      <div className="w-3/4 m-auto">
+        <h2 className="text-4xl font-bold text-[#feead8] text-center mb-10">Our Core Values</h2>
+        <div className="pt-10 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {coreValues.map((value, index) => (
             <div
               key={index}
-              data-aos={animationType}
-              className="relative p-6 rounded-lg shadow-lg group overflow-hidden"
+              className=" flex flex-col items-center text-center p-4 shadow-lg rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.6)] border border-gray-700 hover:border-indigo-500 transform transition-all hover:scale-105 hover:shadow-[0_15px_40px_rgba(75,0,130,0.8)] duration-300 ease-in-out"
+              data-aos={index % 4 === 0 ? "fade-left" : index % 4 === 1 ? "fade-right" : index % 4 === 2 ? "fade-up" : "fade-down"}
               style={{
-                backgroundImage: value.bgImage,
+                backgroundImage:
+                  'url("./images/AI.jpg")',
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              <div
-                className="absolute inset-0 bg-black opacity-40"
-                style={{ zIndex: -1 }}
-              ></div>
-              {/* Content wrapper with 3D translation */}
-              <div className="flex flex-col cursor-pointer items-center justify-center text-center text-white h-full relative z-10">
-                <span className="text-4xl text-[#feead8] mb-4 group-hover:text-teal-300 transition-colors">
-                  {value.icon}
-                </span>
-                <h3 className="mt-4 text-xl text-[#feead8] font-bold">
-                  {value.title}
-                </h3>
-                <p className="text-[#feead8] text-sm mt-3">
-                  {value.description}
-                </p>
-              </div>{" "}
-              *
+              <div className={`w-20 h-20 flex items-center justify-center rounded-full ${value.color}`}>
+                {value.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-[#feead8] mt-4">{value.title}</h3>
+              <p className="text-sm text-[#feead8]">{value.description}</p>
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default CoreValues;
+}

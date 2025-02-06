@@ -9,6 +9,7 @@ import {
   FaShoppingBag,
   FaSatellite,
 } from "react-icons/fa";
+import { GrCloudSoftware } from "react-icons/gr";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -36,7 +37,7 @@ const Service1 = () => {
     },
     {
       title: "Customer Software Devlopment",
-      icon: <FaRegUserCircle />,
+      icon: <GrCloudSoftware />,
       description:
         "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
       bgImage:
@@ -98,12 +99,12 @@ const Service1 = () => {
       className="bg-black  min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-20"
     >
       <h2
-        className="text-4xl font-bold mb-30  text-center text-[#feead8]"
+        className="text-3xl font-bold mb-20  text-center text-[#feead8]"
         data-aos="fade-left"
       >
         Comprehensive Suite Of Our Services
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl md:max-w-[80%]">
         {values.map((value, index) => {
           const animationType = [
             "fade-up",
@@ -116,7 +117,9 @@ const Service1 = () => {
             <div
               key={index}
               data-aos={animationType}
-              className="relative p-6 rounded-lg shadow-lg group transform transition duration-300 ease-in-out"
+             className="relative p-2 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.6)] border border-gray-700 hover:border-indigo-500 transform transition-all hover:scale-105 hover:shadow-[0_15px_40px_rgba(75,0,130,0.9)] duration-300 ease-in-out"
+
+
               style={{
                 backgroundImage: value.bgImage,
                 backgroundSize: "cover",
@@ -128,8 +131,9 @@ const Service1 = () => {
                 style={{ zIndex: -1 }}
               ></div>
 
-              <div className="flex flex-col items-center cursor-pointer justify-center text-center text-white h-full relative z-10 transform transition-transform duration-1000 group-hover:translate-z-10 group-hover:scale-118">
-                <span className="text-4xl text-[#feead8] mb-4 group-hover:text-teal-300 transition-colors">
+                <div className="flex flex-col items-center  shadow-lg p-4  cursor-pointer justify-center text-center text-white h-full relative z-10 transform transition-transform duration-1000 group-hover:translate-z-10 group-hover:scale-118">
+
+                <span className="text-4xl text-[#feead8] mb-4 group-hover:text-[#feead8] transition-colors">
                   {value.icon}
                 </span>
                 <h3 className="mt-4 text-xl text-[#feead8] font-bold">

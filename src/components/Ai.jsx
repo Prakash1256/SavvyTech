@@ -1,0 +1,73 @@
+import { useState } from "react";
+
+const solutions = [
+  {
+    title: "TRANSPORT",
+    items: ["Lpr", "Uic & Container", "Smart Parking", "Traffic Enforcement"],
+  },
+  {
+    title: "SAFETY AND SECURITY",
+    items: [
+      "Face Recognition",
+      "Smart Va",
+      "Gun Detection",
+      "Object Detection",
+      "Smart Tracking System",
+      "Motion Detection",
+    ],
+  },
+  {
+    title: "SECURITY AND BUSINESS ANALYSIS",
+    items: ["Traffic Analytics", "Heat Map", "Age & Gender Detection"],
+  },
+  {
+    title: "PREVENTION",
+    items: ["Hard Hat Detection", "Pose Estimation", "Smoke & Fire Detection"],
+  },
+];
+
+export default function Ai() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  return (
+   <section className="0.5" style={{backgroundImage:'url("./images/Ai.jpg")',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+   }}>
+   <div className="max-w-4xl mx-auto px-4 py-10 md:py-16 md:max-w-[80%]">
+
+      <h2 className="text-center text-2xl pb-10 md:text-3xl font-bold text-[#feead8] mb-8">
+        AI-Enabled Solutions for Mass Adoption
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {solutions.map((solution, index) => (
+          <div key={index} className=" p-6 rounded-2xl shadow-lg  hover:border-indigo-500 transform transition-all hover:scale-105 hover:shadow-[0_15px_40px_rgba(75,0,130,0.8)] duration-300 ease-in-out">
+            <h3 className="text-lg  text-[#feead8] text-center font-semibold  mb-4">
+              {solution.title}
+            </h3>
+            <ul className="relative space-y-2 ">
+              {solution.items.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="text-[#feead8] cursor-pointer text-sm px-4 py-1 list-disc relative overflow-hidden"
+                  onMouseEnter={() => setHoveredIndex(`${index}-${idx}`)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                >
+                  {/* Animated Vertical Line */}
+                  <span
+                    className="absolute left-0 top-0 w-0.5 bg-indigo-600 transition-all duration-500 ease-in-out"
+                    style={{
+                      height: hoveredIndex === `${index}-${idx}` ? "100%" : "0%",
+                    }}
+                  />
+                  * {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+   </section>
+  );
+}
