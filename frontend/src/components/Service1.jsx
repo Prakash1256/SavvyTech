@@ -25,80 +25,63 @@ const Service1 = () => {
      }, []);  
 
 
-  const values = [
-    {
-      title: "Digital Transformation",
-      icon: <FaDigitalOcean />,
-      description:
-        "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "It Consulting",
-      icon: <FaRegUserCircle />,
-      description:
-        "We adapt quickly to change, providing flexible, agile, and scalable solutions tailored to meet evolving business needs.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Customer Software Development",
-      icon: <GrCloudSoftware />,
-      description:
-        "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Cloud Solutions",
-      icon: <FaCloud />,
-      description:
-        "We foster a culture of respect, diversity, and inclusion, valuing every team member's contribution.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Data & Analytics",
-      icon: <FaChartPie />,
-      description:
-        "We continuously innovate, ensuring that our solutions lead to growth and sustained success for our clients.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Artificial Intellignece",
-      icon: <FaMicrochip />,
-      description:
-        "We believe in the power of collaboration, working closely with clients and partners to cultivate strong and life-long relationships.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Web & Mobile app development",
-      icon: <FaLaptopCode />,
-      description:
-        "We foster a culture of respect, diversity, and inclusion, valuing every team member's contribution.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "Ecommerce Plateform",
-      icon: <FaShoppingBag />,
-      description:
-        "We continuously innovate, ensuring that our solutions lead to growth and sustained success for our clients.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-    {
-      title: "IOT & Development",
-      icon: <FaSatellite />,
-      description:
-        "We believe in the power of collaboration, working closely with clients and partners to cultivate strong and life-long relationships.",
-      bgImage:
-        "url('https://images.unsplash.com/photo-1514483127413-f72f273478c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-    },
-  ];
+     const values = [
+      {
+        title: "Digital Transformation",
+        icon: <FaDigitalOcean />,
+        description:
+          "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
+      },
+      {
+        title: "It Consulting",
+        icon: <FaRegUserCircle />,
+        description:
+          "We adapt quickly to change, providing flexible, agile, and scalable solutions tailored to meet evolving business needs.",
+      },
+      {
+        title: "Customer Software Development",
+        icon: <GrCloudSoftware />,
+        description:
+          "We lead with integrity, innovation, and vision, empowering businesses to stay ahead in the digital world.",
+      },
+      {
+        title: "Cloud Solutions",
+        icon: <FaCloud />,
+        description:
+          "We foster a culture of respect, diversity, and inclusion, valuing every team member's contribution.",
+      },
+      {
+        title: "Data & Analytics",
+        icon: <FaChartPie />,
+        description:
+          "We continuously innovate, ensuring that our solutions lead to growth and sustained success for our clients.",
+      },
+      {
+        title: "Artificial Intelligence",
+        icon: <FaMicrochip />,
+        description:
+          "We believe in the power of collaboration, working closely with clients and partners to cultivate strong and life-long relationships.",
+      },
+      {
+        title: "Web & Mobile App Development",
+        icon: <FaLaptopCode />,
+        description:
+          "We foster a culture of respect, diversity, and inclusion, valuing every team member's contribution.",
+      },
+      {
+        title: "Ecommerce Platform",
+        icon: <FaShoppingBag />,
+        description:
+          "We continuously innovate, ensuring that our solutions lead to growth and sustained success for our clients.",
+      },
+      {
+        title: "IoT & Development",
+        icon: <FaSatellite />,
+        description:
+          "We believe in the power of collaboration, working closely with clients and partners to cultivate strong and life-long relationships.",
+      },
+    ];
+    
 
   return (
     <div

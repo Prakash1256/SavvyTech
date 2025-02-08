@@ -33,12 +33,6 @@ export default function CoreValues() {
               key={index}
               className=" flex flex-col items-center text-center p-4 shadow-lg rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.6)] border border-gray-700 hover:border-indigo-500 transform transition-all hover:scale-105 hover:shadow-[0_15px_40px_rgba(75,0,130,0.8)] duration-300 ease-in-out"
               data-aos={index % 4 === 0 ? "fade-left" : index % 4 === 1 ? "fade-right" : index % 4 === 2 ? "fade-up" : "fade-down"}
-              style={{
-                backgroundImage:
-                  'url("./images/AI.jpg")',
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
             >
               <div className={`w-20 h-20 flex items-center justify-center rounded-full ${value.color}`}>
                 {value.icon}

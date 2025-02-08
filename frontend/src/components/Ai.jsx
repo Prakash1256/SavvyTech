@@ -46,7 +46,7 @@ export default function Ai() {
     <section
       id="ai"
       style={{
-        backgroundImage: 'url("/images/robot5.jpg")',
+        backgroundImage: 'url("/images/Ai.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

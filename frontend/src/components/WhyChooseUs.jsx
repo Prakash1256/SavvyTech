@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
         {/* Image Section */}
         <div
           className="w-full  lg:w-1/2 flex justify-center"
-          data-aos="fade-right" // Add fade-right effect for the image
+          data-aos="fade-right"
         >
           <img
             src="./images/solutions.jpg"
@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
         {/* Text Section */}
         <div
           className="w-full lg:w-1/2"
-          data-aos="fade-left" // Add fade-left effect for the text section
+          data-aos="fade-left" 
         >
           <h2 className="text-3xl text-[#feead8] lg:text-3xl font-bold mb-6">
             Why Choose Us

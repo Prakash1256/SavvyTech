@@ -9,7 +9,7 @@ import CounterSection from './components/CounterSection';
 import EdTechSolutions from './components/EdtechSolution';
 import Footer from './components/Footer';
 import TechnologyStack from './components/TechnologyStack';
-import CoreValues from './components/coreValues';
+import CoreValues from './components/CoreValues';
 import Service1 from './components/Service1';
 import BusinessSolutions from './components/BuisnessSolutions';
 import  Form  from './components/Form';
